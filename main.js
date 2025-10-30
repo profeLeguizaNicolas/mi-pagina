@@ -4,7 +4,7 @@ let puntos = 0;
 boton.addEventListener('click',()=>{
     let usuario = document.getElementById('nom').value;
     
-    let valores = JSON.parse(document.getElementsByClassName("true"));
+    let valores = document.getElementsByClassName("true");
     let nombre = document.getElementById('bruce').checked;
     let mayor = document.getElementById('alfred').checked;
     let ciudad = document.getElementById('gotica').checked;
@@ -37,4 +37,5 @@ localStorage.setItem("valores",JSON.stringify(valores));
 
    
 });
+
 
