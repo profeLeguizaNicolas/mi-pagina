@@ -23,15 +23,17 @@ console.log(valores);
 
 let tabla = `<style>td,th{border: 2px red solid; padding:10px;}</style><h1 style="text-align:center">Tabla de Puntajes</h1> <br> <table style="margin:0 auto; border-collapse:collapse;"><thead><th>Nombre</th><th>Puntos</th></thead><tbody>`;
     for(let i = 0 ; i < resultados.length-1;i++){
-        tabla += `<tr><td>${resultados[i].usuario}</td><td>${resultados[i].puntos}</td></tr>`
+        tabla += `<tr><td>${resultados[i].usuario}</td><td>${resultados[i].puntos}</td></tr>`;
+      point.textContent =`${resultados[i].puntos}`;
     }
 tabla += `</tbody></table>`
 
 body.innerHTML += tabla;
 
-point.textContent =`${resultados[i].puntos}`;
+
 
 
 
 document.getElementById("reset").addEventListener("click",()=>{localStorage.clear()})
+
 
