@@ -29,13 +29,14 @@ localStorage.setItem("valores",JSON.stringify(valores));
     if(noche) puntos++
 
  
-    let resultados = JSON.parse(localStorage.getItem("resultados"))||[]
+    let resultados = JSON.parse(localStorage.getItem("resultados"))||[];
 
     resultados.push({usuario,puntos});
-    localStorage.setItem("resultados",JSON.stringify(resultados))
+    localStorage.setItem("resultados",JSON.stringify(resultados));
     window.location.href = "fin.html";
 
-   
+   localStorage.setItem("puntos",puntos);
 });
+
 
 
