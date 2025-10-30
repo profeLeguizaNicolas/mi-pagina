@@ -29,8 +29,9 @@ tabla += `</tbody></table>`
 
 body.innerHTML += tabla;
 
-point.textContent = resultados[i].puntos;
+point.textContent =`${resultados[i].puntos}`;
 
 
 
 document.getElementById("reset").addEventListener("click",()=>{localStorage.clear()})
+
