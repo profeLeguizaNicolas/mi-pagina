@@ -1,6 +1,6 @@
 let punto = localStorage.getItem("point");
 let point = document.getElementById("puntos");
-point.textContent = punto;
+
 
 let usuario = localStorage.getItem("usuario");
 let body = document.body;
@@ -29,6 +29,7 @@ tabla += `</tbody></table>`
 
 body.innerHTML += tabla;
 
+point.textContent = resultados[i].puntos;
 
 
 
